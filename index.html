@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mars Rover Images</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="sticky_top">
+    <h1>Mars Rover Images</h1>
+
+    <label for="rover-select">Select Rover:</label>
+    <select id="rover-select">
+      <option value="curiosity">Curiosity</option>
+      <option value="opportunity">Opportunity</option>
+      <option value="spirit">Spirit</option>
+    </select>
+
+    <label htmlFor="date-input">Select Date:</label>
+    <input type="date" id="date-input" required>
+
+    <label htmlFor="camera-select">Select Camera (optional):</label>
+    <select id="camera-select">
+      <option value="">All Cameras</option>
+      <option value="FHAZ">Front Hazard Avoidance Camera</option>
+      <option value="RHAZ">Rear Hazard Avoidance Camera</option>
+      <option value="MAST">Mast Camera</option>
+      <option value="CHEMCAM">Chemistry and Camera Complex</option>
+      <option value="MAHLI">Mars Hand Lens Imager</option>
+      <option value="MARDI">Mars Descent Imager</option>
+      <option value="NAVCAM">Navigation Camera</option>
+      <option value="PANCAM">Panoramic Camera</option>
+      <option value="MINITES">Miniature Thermal Emission Spectrometer (Mini-TES)</option>
+    </select>
+
+    <button id="submit-btn">Get Images</button>
+  </div>
+
+  <div id="images-container"></div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
